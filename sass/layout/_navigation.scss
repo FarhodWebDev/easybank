@@ -1,0 +1,51 @@
+.site-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    gap: 3rem;
+  }
+
+  &__link {
+    position: relative;
+    @include font-style(
+      1.4rem,
+      normal,
+      normal,
+      $secondary-color-light-gray,
+      $main-font-family-reg,
+      normal
+    );
+    display: inline-block;
+    padding: 3.2rem 0;
+    @include transition(color, 0.3s, ease-in-out);
+
+    &:focus {
+      outline: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 4px;
+      bottom: 0;
+      left: -20%;
+      background: $primary-color-gr;
+      @include transition(width, 0.3s, ease-out);
+    }
+
+    &:hover {
+      color: $secondary-color-dark-green;
+
+      &::before {
+        width: 140%;
+      }
+    }
+  }
+}

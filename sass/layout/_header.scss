@@ -1,0 +1,14 @@
+.header {
+  z-index: 999;
+  background-color: $secondary-color-white;
+  .container {
+    position: static;
+    display: flex;
+    align-items: center;
+  }
+
+  .site-logo__link {
+    margin-right: 25.1rem;
+  }
+}
+

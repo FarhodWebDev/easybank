@@ -1,0 +1,43 @@
+body {
+  @include font-style(
+    1.6rem,
+    1.62,
+    -0.25px,
+    $secondary-color-light-gray,
+    $main-font-family-reg,
+    400
+  );
+}
+
+h1 {
+  @include font-style(
+    5.6rem,
+    1.14,
+    -1px,
+    $secondary-color-dark-green,
+    $main-font-family,
+    100
+  );
+}
+
+h2 {
+  @include font-style(
+    4rem,
+    1.6,
+    -0.7px,
+    $secondary-color-dark-green,
+    $main-font-family,
+    100
+  );
+}
+
+h3 {
+  @include font-style(
+    1.6rem,
+    1.25,
+    -0.29px,
+    $secondary-color-dark-green,
+    $main-font-family,
+    100
+  );
+}
